@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "Kwik Budget",
+    "slug": "kwik-budget",
+    "scheme": "kwikbudget",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "icon": "./assets/icon.png",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B5F6B"
+    },
+    "ios": {
+      "bundleIdentifier": "com.kwikbudget.app",
+      "supportsTablet": false,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.kwikbudget.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#119C95"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "backgroundColor": "#0B5F6B"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#3DDC4A"
+        }
+      ],
+      "expo-sharing",
+      "expo-status-bar",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Kwik Budget uses the camera to read receipts you choose to scan.",
+          "photosPermission": "Kwik Budget reads receipt photos you pick from your library."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}

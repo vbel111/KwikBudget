@@ -1,0 +1,6 @@
+# Minimal Supabase CLI config for Kwik Budget (only what deploying functions needs).
+project_id = "kwik-budget"
+
+[functions.ai]
+# The app calls this with the signed-in (or silent/anonymous) user's token; the function also checks it itself.
+verify_jwt = true
